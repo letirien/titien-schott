@@ -174,6 +174,23 @@ table {
   }
 }
 
+p a{
+  text-decoration: underline;
+}
+.center h2{
+  text-align: center;
+  padding-bottom:68px;
+}
+.center.container{
+  max-width:1280px;
+  margin:0 auto;
+}
+.center.container.text-right{
+  text-align: right;
+}
+.last-sec{
+  padding-bottom:250px!important;
+}
 .line-1 {
   position: relative;
   top: 20px;
@@ -199,7 +216,8 @@ body {
 }
 
 .container {
-  padding: 200px 0 250px 0;
+  /* padding: 200px 0 250px 0; */
+  padding: 200px 0 0 0;
 }
 
 .flex {
@@ -740,7 +758,7 @@ footer p {
   font-size: 13px;
 }
 
-h1::before {
+h1::before,  h2::before{
   position: absolute;
   bottom: 0;
   left: 0;
@@ -760,7 +778,7 @@ h1::before {
   width: 60px;
 }
 
-h1.underline::before {
+h1.underline::before, h2.underline::before {
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
   -webkit-transform: scaleX(1);
@@ -827,7 +845,8 @@ header .underline::before {
   }
 
   .container {
-    padding: 150px 0 250px 0;
+    /* padding: 150px 0 250px 0 */
+    padding: 150px 16px 0 16px
   }
 
   .realisation {
@@ -976,7 +995,7 @@ header .underline::before {
   }
 
   .container {
-    padding: 150px 0 150px 0;
+    padding: 150px 24px 0 24px;
   }
 
   .hobbies {
