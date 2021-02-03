@@ -120,7 +120,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -130,8 +130,10 @@ table {
 }
 
 .anim-typewriter {
-  -webkit-animation: typewriter 3s steps(35) 1s 1 normal both, blinkTextCursor 1000ms steps(35) infinite normal;
-  animation: typewriter 3s steps(35) 1s 1 normal both, blinkTextCursor 1000ms steps(35) infinite normal;
+  -webkit-animation: typewriter 3s steps(35) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(35) infinite normal;
+  animation: typewriter 3s steps(35) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(35) infinite normal;
 }
 
 @-webkit-keyframes typewriter {
@@ -174,22 +176,22 @@ table {
   }
 }
 
-p a{
+p a {
   text-decoration: underline;
 }
-.center h2{
+.center h2 {
   text-align: center;
-  padding-bottom:68px;
+  padding-bottom: 68px;
 }
-.center.container{
-  max-width:1280px;
-  margin:0 auto;
+.center.container {
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.center.container.text-right{
+.center.container.text-right {
   text-align: right;
 }
-.last-sec{
-  padding-bottom:250px!important;
+.last-sec {
+  padding-bottom: 250px !important;
 }
 .line-1 {
   position: relative;
@@ -216,8 +218,7 @@ body {
 }
 
 .container {
-  /* padding: 200px 0 250px 0; */
-  padding: 200px 0 0 0;
+  padding: 200px 0 250px 0;
 }
 
 .flex {
@@ -238,7 +239,7 @@ html {
 
 p,
 a {
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   font-weight: bold;
 }
 
@@ -247,14 +248,14 @@ h1 {
   text-align: center;
   font-size: 50px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin-bottom: 100px;
   line-height: 100px;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
@@ -297,13 +298,13 @@ a {
   margin-bottom: 10px;
   font-size: 35px;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   margin-top: 150px;
 }
 
 .header-info__txt {
-  font-family: 'Trebuchet MS';
+  font-family: "Trebuchet MS";
   font-weight: bold;
 }
 
@@ -335,7 +336,7 @@ a {
 }
 
 .groupskill {
-  width: calc(100%/3);
+  width: calc(100% / 3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,7 +500,7 @@ a {
 }
 
 .bloc-info__date {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 5px;
   line-height: 1.7;
   position: relative;
@@ -712,8 +713,8 @@ a {
   align-items: center;
   border-radius: 10px;
   /* transition effect. not necessary */
-  -webkit-transition: opacity .2s, visibility .2s;
-  transition: opacity .2s, visibility .2s;
+  -webkit-transition: opacity 0.2s, visibility 0.2s;
+  transition: opacity 0.2s, visibility 0.2s;
 }
 
 #sec6 {
@@ -758,12 +759,13 @@ footer p {
   font-size: 13px;
 }
 
-h1::before,  h2::before{
+h1::before,
+h2::before {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  content: '';
+  content: "";
   height: 3px;
   background-color: black;
   -webkit-transform-origin: bottom right;
@@ -778,7 +780,8 @@ h1::before,  h2::before{
   width: 60px;
 }
 
-h1.underline::before, h2.underline::before {
+h1.underline::before,
+h2.underline::before {
   -webkit-transform-origin: bottom left;
   transform-origin: bottom left;
   -webkit-transform: scaleX(1);
@@ -786,7 +789,7 @@ h1.underline::before, h2.underline::before {
 }
 
 .navlist__item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 30px;
   bottom: 0;
@@ -846,7 +849,7 @@ header .underline::before {
 
   .container {
     /* padding: 150px 0 250px 0 */
-    padding: 150px 16px 0 16px
+    padding: 150px 16px 0 16px;
   }
 
   .realisation {
@@ -912,7 +915,7 @@ header .underline::before {
   }
 
   .bloc-xp__date {
-    background-color: #FFF;
+    background-color: #fff;
     padding: 5px;
     line-height: 3;
     position: relative;
@@ -1025,7 +1028,7 @@ header .underline::before {
   }
 
   .groupskill {
-    width: calc(100%/2);
+    width: calc(100% / 2);
   }
 
   .bloc-info {
@@ -1058,7 +1061,7 @@ header .underline::before {
   }
 
   .bloc-info__date {
-    background-color: #FFF;
+    background-color: #fff;
     padding: 5px;
     line-height: 1.7;
     position: relative;
@@ -1144,7 +1147,7 @@ header .underline::before {
   }
 
   .bloc-xp__date {
-    background-color: #FFF;
+    background-color: #fff;
     position: relative;
     color: #54eacc;
     height: 90px;
