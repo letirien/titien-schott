@@ -91,6 +91,21 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
+    <header id="header">
+      <nav class="navbar">
+        <ul class="navlist">
+          <li class="navlist__item">
+            <a class="lien" href="index.html">Retour à l'accueil</a>
+          </li>
+          <li class="navlist__item">
+            <a class="lien" href="titien.html">Qui je suis ?</a>
+          </li>
+          <li class="navlist__item">
+            <a class="lien" href="realisations.html">Voir mes réalisations</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <h1>Contacter un Développeur Web</h1>
       <div class="center">
@@ -104,7 +119,7 @@
           <input type="text" name="name" placeholder="Nom/prénom" />
           <input type="email" name="email" placeholder="Votre email" />
           <input type="text" name="message" placeholder="Votre message" />
-          <div class="field">
+          <div class="catcha">
             <div data-netlify-recaptcha="true"></div>
           </div>
           <input type="submit" value="envoyer" />
@@ -113,6 +128,14 @@
     </main>
   </body>
   <style>
+    .catcha {
+      width: 300px;
+      margin: 24px auto 0 auto;
+    }
+    header {
+      background: none;
+      height: 40px;
+    }
     .center {
       text-align: center;
       padding: 24px;
