@@ -91,15 +91,40 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    Hello World
-    <form action="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Nom/prénom" />
-      <input type="email" name="email" placeholder="Votre email" />
-      <input type="text" name="message" placeholder="Votre message" />
-      <div class="field">
-        <div data-netlify-recaptcha="true"></div>
+    <main>
+      <h1>Contacter un Développeur Web</h1>
+      <div class="center">
+        <h2>
+          Eh oui ! je suis un développeur Web et si vous n'avez pas encore vu
+          mes réalisations je vous invites à aller les voirs
+          <a href="realisations.html">par ici.</a>
+        </h2>
+        <p>Me contacter directement</p>
+        <form action="POST" data-netlify="true">
+          <input type="text" name="name" placeholder="Nom/prénom" />
+          <input type="email" name="email" placeholder="Votre email" />
+          <input type="text" name="message" placeholder="Votre message" />
+          <div class="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+          <input type="submit" value="envoyer" />
+        </form>
       </div>
-      <input type="submit" value="envoyer" />
-    </form>
+    </main>
   </body>
+  <style>
+    .center {
+      text-align: center;
+      padding: 24px;
+    }
+    .center p {
+      margin: 60px 0 24px 0;
+    }
+    h2 a {
+      text-decoration: underline;
+    }
+    input[type="submit"] {
+      margin-top: 24px;
+    }
+  </style>
 </html>
