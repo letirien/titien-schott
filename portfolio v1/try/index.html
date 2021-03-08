@@ -2,12 +2,23 @@
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
-  axios({
-    method: "get",
-    url: "https://katena.mehat.etu.mmi-unistra.fr/data",
-    responseType: "application/json",
-    headers: { "Access-Control-Allow-Origin": "*" },
-  }).then(function (response) {
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  myHeaders.append("Access-Control-Allow-Origin", "*");
+
+  var myInit = {
+    method: "GET",
+    headers: myHeaders,
+    mode: "cors",
+    cache: "default",
+  };
+
+  var myRequest = new Request(
+    "https://katena.mehat.etu.mmi-unistra.fr/data",
+    myInit
+  );
+
+  fetch(myRequest, myInit).then(function (response) {
     console.log(response);
   });
 </script>
